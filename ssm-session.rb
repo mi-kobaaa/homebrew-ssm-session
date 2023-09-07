@@ -4,7 +4,10 @@ class SsmSession < Formula
   url "https://github.com/mi-kobaaa/ssm-session/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "8bb7db0cc56aa3572dc81b5aa104526b0d628c218ece29db7ee4edf569d5153e"
 
+  depends_on "shc"
+
   def install
+    system "shc", "-f", "ssm-session.sh", "-o", "ssm-session"
     bin.install "ssm-session"
   end
 
