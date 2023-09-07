@@ -5,7 +5,7 @@ class SsmSession < Formula
   sha256 "8bb7db0cc56aa3572dc81b5aa104526b0d628c218ece29db7ee4edf569d5153e"
 
   def install
-    bin.install "bin/ssm-session"
+    bin.install "ssm-session"
   end
 
   test do
